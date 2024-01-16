@@ -1,0 +1,95 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("/public/images/background-main.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+.navigation-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navigation-container p {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.main-body {
+  display: flex;
+  height: 85vh;
+  width: 100vw;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.short-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description {
+  width: 60%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.login,
+.signup {
+  border-radius: 6px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 5px;
+  border: 2px solid orange;
+  transition: 0.2s;
+}
+
+.login {
+  padding: 13px 35px;
+}
+
+.signup {
+  padding: 13px 30px;
+  border: 2px solid blueviolet;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.description {
+  font-size: 20px;
+}
+
+.main-body div p {
+  margin-top: 10px;
+}
+
+.buttons {
+  margin-top: 50px;
+}
+
+.login:hover {
+  background-color: orange;
+}
+
+.signup:hover {
+  background-color: blueviolet;
+}

@@ -1,0 +1,91 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("/public/images/background-main.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+.navigation-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navigation-container p {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+main {
+  display: flex;
+  height: 85vh;
+  width: 100vw;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid orange;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form input {
+  background-color: transparent;
+  color: white;
+  border: 2px solid orange;
+  margin: 10px;
+  padding: 13px 20px;
+  font-size: 15px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.login {
+  border-radius: 6px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 5px;
+  border: 2px solid orange;
+  transition: 0.2s;
+  padding: 13px 30px;
+  margin-top: 20px;
+}
+
+.login:hover {
+  background-color: orange;
+}
+
+a {
+  color: orange;
+  text-decoration: none;
+}
+
+.signup {
+  transition: 0.2s;
+  border-radius: 5px;
+}
+
+.signup:hover {
+  background-color: orange;
+  color: white;
+}
