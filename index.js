@@ -4,6 +4,7 @@ const cors = require("cors");
 require("dotenv").config();
 const { connectDB } = require("./connection");
 const userRouter = require("./routes/userRoute");
+const urlRouter = require("./routes/urlRoute");
 const cookieParser = require("cookie-parser");
 
 const app = express();
@@ -23,6 +24,7 @@ app.use(express.static(path.join(__dirname + "/public")));
 connectDB(process.env.DATABASE_URL);
 
 app.use("/user", userRouter);
+app.use("/url", urlRouter);
 
 app.listen(PORT, () => {
   console.log(`Server started at port: ${PORT}`);
