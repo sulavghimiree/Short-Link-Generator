@@ -32,6 +32,11 @@ async function OpenUrlUsingShortId(req, res) {
   res.redirect(entry.redirectURL);
 }
 
+async function getAllAnalytics(req, res) {
+  const result = await URL.find({});
+  return res.json(result);
+}
+
 async function getAnalyticsOfUrl(req, res) {
   const shortID = req.params.shortId;
   const result = await URL.findOne({ shortID });
@@ -45,4 +50,5 @@ module.exports = {
   createNewShortURL,
   OpenUrlUsingShortId,
   getAnalyticsOfUrl,
+  getAllAnalytics,
 };
